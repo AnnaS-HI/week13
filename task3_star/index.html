@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сервис комментариев неделя 13я, задание со звездочкой</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Сервис комментариев со спам фильтром</h1>
+    <div class="comment-form">
+      <input
+        id="username"
+        class="input-field"
+        type="text"
+        placeholder="Введите ваше имя"
+      />
+      <input
+        id="avatar"
+        class="input-field"
+        type="text"
+        placeholder="Введите ссылку на ваш аватар"
+      />
+      <textarea
+        id="comment"
+        class="input-field"
+        rows="4"
+        placeholder="Оставьте комментарий"
+      ></textarea>
+      <label>
+        <input type="checkbox" id="showName" /> Показывать ваше имя </label
+      ><br />
+      <button class="submit-button" onclick="submitComment()">Отправить</button>
+    </div>
+    <ul id="commentList" class="comment-list">
+      <!-- добавление области с комментариями через скрипт -->
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>
+
